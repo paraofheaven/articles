@@ -157,7 +157,7 @@ let map2 =Immtable.map({a:1, b: 1,c: 1});
 map1 === map2;   // false
 ```
 
-为了直接比较对象的值，immutable.js提供了Immutable.js来做值比较，结果如下：
+为了直接比较对象的值，immutable.js提供了is来做值比较，结果如下：
 
 ```js
 Immtable.is(map1,map2);  //true
