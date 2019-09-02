@@ -31,11 +31,12 @@
 
 ## 概述
 
-React Router的基础
-1. 基本路由跳转
-2. 嵌套路由
-3. 带参数路径
-4. 保护式路由
+React Router介绍的目录
+1. 基本路由
+2. 嵌套路由和动态路由
+3. History
+4. 总结
+5. 未来
 
 主要围绕构建这些路由所涉及的概念进行讨论。
 
@@ -62,7 +63,7 @@ React Router 是建立在[history](https://github.com/ReactTraining/history)之�
 
 - **component**.在上面我们已经看到，当URL匹配时，router会将传递的组件使用`React.createElement`来生成一个React元素。
 
-- **render** 适合行内渲染。路径匹配时，`render`接受一个函数返回一个元素。
+- **render** 适合行内渲染。路径匹配时，`render`接受一个函数返回一个元素。适用于根据`props`的不同来渲染不同的component。
 
 - **children** `children`和`render`类似，也接受一个函数返回一个React元素，不同的是，不管路径是否匹配，children都会渲染。
 
@@ -73,13 +74,11 @@ React Router 是建立在[history](https://github.com/ReactTraining/history)之�
 当路由路径和当前路径成功匹配，会生成一个对象，我们叫它**match**。match对象有更多关于URL和Path的信息。这些信息可以通过它的属性获取，如下所示：
 
 - `match.url` 返回URL匹配部分的字符串。对于创建嵌套的`<Link>`很有用。
-- `match.path` 返回路由路径字符串
+- `match.path` 返回路由路径完整字符串
 - `match.isExact` 使用===来准确匹配
 - `match.params` 返回一个对象包含Path-to-RegExp包从URL解析的键值对。
 
-现在我们完全了解了`<Route>`，开始创建一个嵌套路由吧。
-
-#### 为什么需要Switch组件？
+#### 什么时候需要Switch组件？
 我们先来看一段代码：
 ```
 <Route exact path="/" component={Home}/>
@@ -89,7 +88,11 @@ React Router 是建立在[history](https://github.com/ReactTraining/history)之�
 ```
 如果当前URL为`/products`，那么所有匹配`/products`路径的route都会被渲染。所以，最后一个路由，`path = /:id`的route最终会被render，设计就是如此，但这可能不是我们想要的结果，我们希望只有第一个被匹配到的路径才会被渲染，这就需要`<Switch>`组件了。
 
-#### 嵌套路由
+其实之前react-router-dom还提供了一个IndexRoute组件，现在已经被废弃了，我们现在使用`Switch`来替代它。
+
+现在我们完全了解了`<Route>`，开始创建一个嵌套路由吧。
+
+#### 嵌套路由的实现
 
 我们给`/category`和`/products`创建了路由。但如果我们想要`/category/shoes`这种形式的URL呢？
 
@@ -147,21 +150,22 @@ export default Category;
 
 首先，我们给嵌套路由定义了一些Link。之前提到过， `match.url`用来构建嵌套链接， `match.path`用来构建嵌套路由。如果你对match有不理解的概念， `console.log(match)`会提供一些有用的信息来帮助你了解它。
 
+## History
 
 通过阅读源码，我们知道了所有的路由操作都是通过操作`history`来进行的，接下来正式介绍下`history`。
-
-## History
 
 > `history`是一个统一了所有DOM和非DOM环境会话记录的Javascript库。history提供了简洁的API,让你可以管理history堆栈，跳转，跳转前确认，以及保持会话之间的状态。
 
 history是react router所必需的两个依赖之一。
-每个router组件创建了一个history对象，用来记录当前路径( `history.location` )，上一步路径也存储在堆栈中。当前路径改变时，视图会重新渲染，给你一种跳转的感觉。当前路径又是如何改变的呢？history对象有 `history.push()`和 `history.replace()`这些方法来实现。当你点击 `<Link>`组件会触发 `history.push()`，使用 `<Redirect>`则会调用 `history.replace()`。其他方法 - 例如 `history.goBack()`和 `history.goForward()` - 用来根据页面的后退和前进来跳转history堆栈。
+每个router组件创建了一个history对象，用来记录当前路径( `history.location` )，上一步路径也存储在堆栈中。当前路径改变时，视图会重新渲染，给你一种跳转的感觉。
+
+history对象有 `history.push()`和 `history.replace()`这些方法来实现。当你点击 `<Link>`组件会触发 `history.push()`，使用 `<Redirect>`则会调用 `history.replace()`。其他方法 - 例如 `history.goBack()`和 `history.goForward()` - 用来根据页面的后退和前进来跳转history堆栈。
 
 那么history内部又是怎么样实现路由监听和响应的呢？
 
 #### History的实现
 
-在认识history之前，我们首先知道浏览器给我们提供的原生路由功能，比如[`location`](https://developer.mozilla.org/zh-CN/docs/Web/API/Location)，接下来的很多方法中将出现它们的影子。
+在了解history实现之前，我们首先知道浏览器给我们提供的原生路由功能，比如[`location`](https://developer.mozilla.org/zh-CN/docs/Web/API/Location)，接下来的很多方法中将出现它们的影子。
 
 `history`提供了三种路由实现的方式。
 1. `browserHistory`，支持HTML5 history API的路由实现（[兼容性](https://caniuse.com/#feat=history)）
@@ -169,7 +173,7 @@ history是react router所必需的两个依赖之一。
 3. `createMemoryHistory`，React实现的定制化路由，不依赖任何环境，可用于非DOM环境，比如`React Native` 或 `SSR`
 
 #### browserHistory
-通过`history.createBrowserHistory`创建
+通过`history.createBrowserHistory`创建，下面是主要封装的方法和原生方法的映射。
 
 原生方法 ---> 封装方法
 1. `pushState` ---> `push`
@@ -187,10 +191,6 @@ window.history.pushState(state, title, url)
 window.history.replaceState(state, title, url)
 // 与 pushState 基本相同，但她是修改当前历史记录，而 pushState 是创建新的历史记录
 
-window.addEventListener("popstate", function() {
-    // 监听浏览器前进后退事件，pushState 与 replaceState 方法不会触发              
-});
-
 window.history.back() // 后退
 window.history.forward() // 前进
 window.history.go(1) // 前进一步，-2为后退两步，window.history.lengthk可以查看当前历史堆栈中页面的数量
@@ -204,16 +204,20 @@ window.history.go(1) // 前进一步，-2为后退两步，window.history.length
 
 由于hash值变化不会导致浏览器向服务器发出请求，而且hash改变会触发`hashChange`事件，浏览器的前进后退也能对其进行控制，所以在html5的`history`出现前，基本都是使用hash来实现前端路由的，这也是hash模式能兼容老版浏览器的原因。
 
+#### 监听路由变化
 
-location: pathname,search,hash,key
+`history`提供了对外提供了封装的 **listen** 方法监听路由的变化。这里采用了观察者模式(publish-subscription)，每一个注册在`history.listen(callback)`中的`callback `都是一个监听者，它接受[location](https://reacttraining.com/react-router/core/api/location)和`action`两个参数。当路由发生变化时，`notifyManager`回调触发所有的监听者，从而实现事件的同步。listen返回了解绑listen的方法。实现上是很值得参考的。
+```
+// 绑定监听事件
+unlisten = history.listen((location,action) => {
+   console.log(location)  // 返回路由的信息，如pathname，hash等信息
+   console.log(action)  // 返回POP,PUSH,REPLACE中
+});
+// 解绑监听事件
+unlisten();
+```
 
-
-那么我们经常使用的 <BrowserRouter> 和 <HashRouter>是什么呢，相信你已经猜到了，这只是React Router对 browserHistory 和 hashHistory 实现的组件封装。
-
-
-其实之前react-router-dom还提供了一个IndexRoute组件，现在已经被废弃了，我们现在使用`Switch`来替代它。
-
-翻看`createBrowserHistory.js`，可以看到`history`内部是怎么实现监听浏览器路由变化的。
+我们可以翻看一下`createBrowserHistory.js`，可以看到`history`内部是怎么实现监听浏览器路由变化的。
 
 **[window.popstate](https://developer.mozilla.org/en-US/docs/Web/API/Window/popstate_event)**
 
@@ -221,6 +225,7 @@ location: pathname,search,hash,key
 
 源码中显示，通过`window.addEventListener('popstate',cb)`注册的回调，需要注意的是，调用`history.pushState`或`history.replaceState`时不会触发`popstate`事件，只有在做出浏览器动作时，才会触发该事件，如用户点击浏览器的回退按钮（或者在JS中调用history.back()).
 
+路由变化的也是同理。
 **[window.hashchange](https://developer.mozilla.org/en-US/docs/Web/API/Window/hashchange_event)**
 
 > The `hashchange` event is fired when the fragment identifier of the URL has changed
@@ -232,14 +237,18 @@ location: pathname,search,hash,key
 现在我们捋一下`react-router`(下称RR)和history(下称H)的流程：
 
 RR初始化Router时，调用H的`listen`方法，开始监听路由变化，回调为CB。
-更改浏览器URL(或者hash) --> 回调CB,开始调用注册在`transitionManager`上的listeners --> RR中的props.location变化 --> 利用`path-to-regexp`匹配到`Component`或者`children node` --> `React.render(node)` --> 完成页面渲染。
+更改浏览器URL(或者hash) --> 回调CB,开始调用注册在`transitionManager`上的listeners --> RR中的location变化 --> 利用`path-to-regexp`匹配到`Component`或者`children node` --> `React.render(node)` --> 完成页面渲染。
 
-如你在本文中所看到的，React Router是一个帮助React构建更完美，更声明式的路由库。不像React Router之前的版本，在V4中，一切都是组件。而且，新的设计模式也更完美的使用React的构建方式来实践。比如我们提到的ReactContext.Provider,ReactContext.Consumer。
+如你在本文中所看到的，React Router是一个帮助React构建更完美，更声明式的路由库。不像React Router之前的版本，在V4中，一切都是组件。而且，新的设计模式也更完美的使用React的构建方式来实践。比如我们提到的ReactContext.Provider，ReactContext.Consumer。
 
 这次教程，我们由浅入深，学到了：
 - 路由的基础功能，设计思路和React Router的基础组件
 - History的实践和原理
 - 浏览器原生支持的监听路由事件的方法
+
+## React Router的未来
+
+
 
 ## Tips
 
@@ -249,7 +258,6 @@ RR初始化Router时，调用H的`listen`方法，开始监听路由变化，回
 在DOM API中，这些hash history通过`window.location.hash = newHash `，很简单的利用hash来实现跳转。但是这种行为是不具备回溯性的，我们想要全部的history都能够使用location state,这就要求我们为每一个location创建一个唯一的key，并把它们的状态存储在 **session storage** 中。当访客点击"前进"和"后退"时，我们就可以使用key:value的机制找到这个location 去恢复它的state。
 
 ### 待完善
-- React Router组件的完善解析
 - `createMemoryHistory`在SSR端的应用解析
 
 #### 参考资料
