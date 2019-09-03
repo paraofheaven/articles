@@ -35,8 +35,9 @@ React Router介绍的目录
 1. 基本路由
 2. 嵌套路由和动态路由
 3. History
-4. 总结
-5. 未来
+4. 在服务端（SSR）的应用
+5. 总结
+6. 未来
 
 主要围绕构建这些路由所涉及的概念进行讨论。
 
@@ -232,6 +233,10 @@ unlisten();
 
 `window.addEventListener('hashchange',cb)`注册的回调，需要注意的是浏览器原生只会监听#符号后的变化，而我们在react或者类react项目中使用的`#/`，都是框架层做的封装。
 
+## 在服务端（SSR）的应用
+
+`react-router`在SSR端提供了`StaticRouter`的封装路由入口，由于不支持`location`，服务端的功能受到了不少限制，只提供了push、replace方法，`StaticRouter`意思就是说，是静态的路由，它实际上并没有改变当前的路由，而只是记录了路由的改变。
+
 ## 总结：
 
 现在我们捋一下`react-router`(下称RR)和history(下称H)的流程：
@@ -257,8 +262,6 @@ RR初始化Router时，调用H的`listen`方法，开始监听路由变化，回
 
 在DOM API中，这些hash history通过`window.location.hash = newHash `，很简单的利用hash来实现跳转。但是这种行为是不具备回溯性的，我们想要全部的history都能够使用location state,这就要求我们为每一个location创建一个唯一的key，并把它们的状态存储在 **session storage** 中。当访客点击"前进"和"后退"时，我们就可以使用key:value的机制找到这个location 去恢复它的state。
 
-### 待完善
-- `createMemoryHistory`在SSR端的应用解析
 
 #### 参考资料
 [React-router wiki](http://react-guide.github.io/react-router-cn/docs/guides/basics/Histories.html)
