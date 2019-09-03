@@ -239,7 +239,7 @@ unlisten();
 
 ## 总结：
 
-现在我们捋一下`react-router`(下称RR)和history(下称H)的流程：
+现在我们捋一下`react-router`(下称RR)和`history`(下称H)的流程：
 
 RR初始化Router时，调用H的`listen`方法，开始监听路由变化，回调为CB。
 更改浏览器URL(或者hash) --> 回调CB,开始调用注册在`transitionManager`上的listeners --> RR中的location变化 --> 利用`path-to-regexp`匹配到`Component`或者`children node` --> `React.render(node)` --> 完成页面渲染。
@@ -253,7 +253,14 @@ RR初始化Router时，调用H的`listen`方法，开始监听路由变化，回
 
 ## React Router的未来
 
+Ryan Florence 在[The Future of React Router](https://reacttraining.com/blog/reach-react-router-future/)中阐述了V4版本的react router设计中的更新，也提出了更严格的要求。
 
+- 更小的bundle大小，大约约束在3kb左右
+- 分离核心功能，不依赖任何其他库
+- 组织更好的嵌套路由的配置(和V3版本和@react/router的更像)
+- 相对性的Links,Navigation
+- 使用`useLocation`来更好的管理`location`和`navigate`
+- Route 参数验证场景
 
 ## Tips
 
