@@ -32,18 +32,76 @@
 ## 概述
 
 React Router介绍的目录
-1. 基本路由
-2. 嵌套路由和动态路由
-3. History
-4. 在服务端（SSR）的应用
-5. 总结
-6. 未来
+1. 静态路由和动态路由
+2. 基本路由
+3. 嵌套路由和动态路由
+4. History
+5. 在服务端（SSR）的应用
+6. 总结
+7. 未来
 
 主要围绕构建这些路由所涉及的概念进行讨论。
 
 React Router库包含三个包： `react-router`, `react-router-dom`, 和 `react-router-native`。 `react-router`是路由的核心包，而其他两个是基于特定环境的。如果你在开发一个网站，你应该使用 `react-router-dom`，如果你在移动应用的开发环境使用React Native，你应该使用 `react-router-native`。
 
 React Router 是建立在[history](https://github.com/ReactTraining/history)之上的。简而言之，一个 `history` 知道如何去监听浏览器地址栏的变化， 并解析这个 URL 转化为 location 对象， 然后 router 使用它匹配到路由，最后正确地渲染对应的组件。
+
+## 静态路由和动态路由的选择
+
+首先我们从历史的发展开始讲起，当时，React Router的作者Michael和Ryan都有着开发[Ember](https://emberjs.com)的经验，自然React Router的第一个版本和Ember的路由机制很相似--都是有一个静态文件去定义路由规则，作为初始化应用的一部分。
+
+使用静态路由的通常都会有这么一段代码在项目定义文件内：
+```
+const routes = (
+  <Router>
+    <Route path='/' component={Main}>
+      <IndexRoute component={Home} />
+      <Route path='playerOne' component={Prompt} />
+      <Route path='playerTwo/:playerOne' component={Prompt} />
+      <Route path='battle' component={ConfirmBattle} />
+    </Route>
+  </Router>
+)
+export default routes
+```
+
+这种静态路由的概念应用也很普遍，我们所熟知的Express、Angular、Ember都是使用的这种静态路由。
+
+我们知道，React Router4运用的是动态路由，那么问题来了，**静态路由不好用吗？**
+
+答案是，“不，好用”。但是，大家觉得静态路由不符合React的设计模式。为什么呢？
+
+我们来看一个特殊路由的定义
+```
+<Route onEnter={checkAuth} path='home' component={Home} />
+```
+这个路由特殊在他是一个鉴权路由，也就是说，在路由初始化时会判断当前用户有没有权限进入，这是非常普遍的场景。这听起来像是在`Home`组件的`ComponentDidMount`做的事情，的确也是这样。
+
+但是如果加上了嵌套路由，比如我们需要在`/home/a`和`/home/b`两个嵌套路由中增加鉴权，我们需要怎么办？应该是这样：
+```
+<Route onEnter={checkAuth} path='home' component={Home} />
+<Route onEnter={checkAuth} path='home/a' component={HomeA} />
+<Route onEnter={checkAuth} path='home/b' component={HomeB} />
+```
+这样一来，鉴权操作就不能只在`Home`组件的`ComponentDidMount`中执行了。这个问题，React的路由组件化概念是这么实现的：
+**Home组件**
+```
+const Home = () => (
+  <div>
+    <h2>Home</h2>
+    <ul>
+      <li>
+        <Link to={`/home`}>
+          Rendering with React
+        </Link>
+      </li>
+    </ul>
+    <Route path={`/home/a`} component={HomeA} />
+    <Route path={`/home/b`} component={HomeB} />
+  </div>
+)
+```
+这样一来，我们的鉴权操作始终都能在`Home`组件的`ComponentDidMount`中执行,这就是React Router 4和传统静态路由的区别。所有的API都是基于`Component`，我们可以在任何一个React组件中去使用它，而不光光是路由定义文件。
 
 ## 基础路由
 下面是普遍的路由的例子：
