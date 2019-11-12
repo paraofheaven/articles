@@ -1,28 +1,28 @@
-## µÑ·çĞÂÆ½Ì¨Ç°¶ËJavaScript±àÂë¹æ·¶Æğ²İ
+## ç¬›é£æ–°å¹³å°å‰ç«¯JavaScriptç¼–ç è§„èŒƒèµ·è‰
 
-#### ±àÂë¹æ·¶
+#### ç¼–ç è§„èŒƒ
 
-ÔÚÍÅ¶ÓĞ­×÷¹ı³ÌÖĞ£¬±àÂë¹æ·¶µÄ×÷ÓÃÏë±Ø²»ÓÃ¶àËµ£¬±¾ÎÄÖ÷Òª½éÉÜÈçºÎÑ¡Ôñ¼°ÏàÓ¦µÄ¸¨Öú¹¤¾ß£¬×î´ó³Ì¶ÈÉÏ±£Ö¤´úÂëÖÊÁ¿¡£
+åœ¨å›¢é˜Ÿåä½œè¿‡ç¨‹ä¸­ï¼Œç¼–ç è§„èŒƒçš„ä½œç”¨æƒ³å¿…ä¸ç”¨å¤šè¯´ï¼Œæœ¬æ–‡ä¸»è¦ä»‹ç»å¦‚ä½•é€‰æ‹©åŠç›¸åº”çš„è¾…åŠ©å·¥å…·ï¼Œæœ€å¤§ç¨‹åº¦ä¸Šä¿è¯ä»£ç è´¨é‡ã€‚
 
-##### Ñ¡Ôñ±ê×¼
+##### é€‰æ‹©æ ‡å‡†
 
-+ ÈÏ¿É¶È¸ß£¬¸Ã¹æ·¶ÏÖÔÚÒÑ¾­»òÕß¼´½«³ÉÎª¹ú¼Ê JavaScript ±ê×¼ÁË
-+ Ö§³ÖÏîÄ¿µÄ¼¼ÊõÑ¡ĞÍ
-+ Íê±¸µÄ²å¼şÖ§³Ö
++ è®¤å¯åº¦é«˜ï¼Œè¯¥è§„èŒƒç°åœ¨å·²ç»æˆ–è€…å³å°†æˆä¸ºå›½é™… JavaScript æ ‡å‡†äº†
++ æ”¯æŒé¡¹ç›®çš„æŠ€æœ¯é€‰å‹
++ å®Œå¤‡çš„æ’ä»¶æ”¯æŒ
 
-²Î¿¼ÒÔÉÏ¼¸Ìõ±ê×¼£¬ airbnb ÍÅ¶ÓÔÚ GitHub Î¬»¤µÄ [airbnb/javascript](https://github.com/airbnb/javascript) Ë²¼äÍÑÓ±¶ø³ö¡£
+å‚è€ƒä»¥ä¸Šå‡ æ¡æ ‡å‡†ï¼Œ airbnb å›¢é˜Ÿåœ¨ GitHub ç»´æŠ¤çš„ [airbnb/javascript](https://github.com/airbnb/javascript) ç¬é—´è„±é¢–è€Œå‡ºã€‚
 
-+ Ä¿Ç° GitHub ÉÏ×îÓĞÈÈ¶ÈµÄ¹æ·¶£¬ÓĞ¿Ö²ÀµÄ 35000+ ¸ö star
-+ Ö§³Ö ES6¡¢React µÈ
-+ ¹Ù·½Ìá¹© ESlint¡¢JSCS ²å¼şÖ§³Ö
++ ç›®å‰ GitHub ä¸Šæœ€æœ‰çƒ­åº¦çš„è§„èŒƒï¼Œæœ‰ææ€–çš„ 35000+ ä¸ª star
++ æ”¯æŒ ES6ã€React ç­‰
++ å®˜æ–¹æä¾› ESlintã€JSCS æ’ä»¶æ”¯æŒ
 
-##### ¹æÔòÅäÖÃ
+##### è§„åˆ™é…ç½®
 
-airbnb ÍÅ¶ÓÔÚ·ÖÏí±àÂë·ç¸ñµÄÍ¬Ê±£¬»¹Ìá¹©ÁËÓëÖ®¶ÔÓ¦µÄ eslint ÅäÖÃÎÄ¼ş¡£ËûÃÇÌá¹©µÄÅäÖÃÎÄ¼ş£¬¸ù¾İÊ¹ÓÃ»·¾³²»Í¬£¬·ÖÈıÖÖ£º
+airbnb å›¢é˜Ÿåœ¨åˆ†äº«ç¼–ç é£æ ¼çš„åŒæ—¶ï¼Œè¿˜æä¾›äº†ä¸ä¹‹å¯¹åº”çš„ eslint é…ç½®æ–‡ä»¶ã€‚ä»–ä»¬æä¾›çš„é…ç½®æ–‡ä»¶ï¼Œæ ¹æ®ä½¿ç”¨ç¯å¢ƒä¸åŒï¼Œåˆ†ä¸‰ç§ï¼š
 
 1 `eslint-config-airbnb`  
 
-Ö§³Ö`ECMAScript 6+`ºÍ`React`
+æ”¯æŒ`ECMAScript 6+`å’Œ`React`
 
 - `npm install --save-dev eslint-config-airbnb eslint-plugin-import eslint-plugin-react eslint-plugin-jsx-a11y eslint`
 
@@ -30,7 +30,7 @@ airbnb ÍÅ¶ÓÔÚ·ÖÏí±àÂë·ç¸ñµÄÍ¬Ê±£¬»¹Ìá¹©ÁËÓëÖ®¶ÔÓ¦µÄ eslint ÅäÖÃÎÄ¼ş¡£ËûÃÇÌá¹©µÄÅ
 
 2 `eslint-config-airbnb-base`
 
-Ö§³Ö`ECMAScript 6+`
+æ”¯æŒ`ECMAScript 6+`
 
 - `npm install --save-dev eslint-config-airbnb-base eslint-plugin-import eslint`
 
@@ -38,7 +38,7 @@ airbnb ÍÅ¶ÓÔÚ·ÖÏí±àÂë·ç¸ñµÄÍ¬Ê±£¬»¹Ìá¹©ÁËÓëÖ®¶ÔÓ¦µÄ eslint ÅäÖÃÎÄ¼ş¡£ËûÃÇÌá¹©µÄÅ
 
 3 `eslint-config-airbnb-base/legacy`
 
-Ö§³ÖES5
+æ”¯æŒES5
 
 - `npm install --save-dev eslint-config-airbnb-base eslint-plugin-import eslint`
 
@@ -46,14 +46,14 @@ airbnb ÍÅ¶ÓÔÚ·ÖÏí±àÂë·ç¸ñµÄÍ¬Ê±£¬»¹Ìá¹©ÁËÓëÖ®¶ÔÓ¦µÄ eslint ÅäÖÃÎÄ¼ş¡£ËûÃÇÌá¹©µÄÅ
 
 ##### Eslint Parser
 
-Èç¹û³ÌĞòÖĞ»¹ÓĞES5µÄĞ´·¨£¬½¨ÒéÊ¹ÓÃ`base-eslint`×÷ÎªeslintµÄeslintµÄparser,Ö»ÒªÔÚ`.eslintrc`ÖĞ¼ÓÈëÈçÏÂ´úÂë¼´¿É¡£
+å¦‚æœç¨‹åºä¸­è¿˜æœ‰ES5çš„å†™æ³•ï¼Œå»ºè®®ä½¿ç”¨`base-eslint`ä½œä¸ºeslintçš„eslintçš„parser,åªè¦åœ¨`.eslintrc`ä¸­åŠ å…¥å¦‚ä¸‹ä»£ç å³å¯ã€‚
 
 ```js
 "parser": "babel-eslint"
 ```
 
-##### ¿ÉÊÓ»¯ÌáÊ¾
+##### å¯è§†åŒ–æç¤º
 
-½èÖúwebstormÌá¹©µÄESlint²å¼ş£¬ÔÚ`Setting\Languages&Frameworks\JavaScript\Code Quality Tools\ESlint `Ñ¡ÖĞEnbale¼´¿É£¬webstorm»á×Ô¶¯²éÕÒ`.eslintrc`ºÍ`pacjage.json`£¬À´¶ÔjsÎÄ¼ş½øĞĞlint´¦Àí£¬ÁíÍâ£¬»¹¿ÉÒÔ×Ô¶¨ÒåeslintConfigÎÄ¼ş£¬ºÍAdditional rules ¡£
+å€ŸåŠ©webstormæä¾›çš„ESlintæ’ä»¶ï¼Œåœ¨`Setting\Languages&Frameworks\JavaScript\Code Quality Tools\ESlint `é€‰ä¸­Enbaleå³å¯ï¼Œwebstormä¼šè‡ªåŠ¨æŸ¥æ‰¾`.eslintrc`å’Œ`pacjage.json`ï¼Œæ¥å¯¹jsæ–‡ä»¶è¿›è¡Œlintå¤„ç†ï¼Œå¦å¤–ï¼Œè¿˜å¯ä»¥è‡ªå®šä¹‰eslintConfigæ–‡ä»¶ï¼Œå’ŒAdditional rules ã€‚
 
-webstorm³ıÁË¿ÉÒÔ½øĞĞlint²Ù×÷£¬»¹¿ÉÒÔ×Ô¶¯¶ÔÒ»Ğ©¼òµ¥µÄ´íÎóºÍ¾¯¸æ½øĞĞĞŞ¸´£¬ÓÒ»÷Ñ¡Ïî`fix ESlint problems`£¬ÕâÑù¿ÉÒÔ´ó´ó¼õÉÙÎÒÃÇĞŞ¸´±àÂë¹æ·¶µÄÊ±¼ä£¬²»µÃ²»Ëµ£¬webstormÕæÊÇÇ°¶Ë¿ª·¢µÄÉñÆ÷°¡¡£
+webstormé™¤äº†å¯ä»¥è¿›è¡Œlintæ“ä½œï¼Œè¿˜å¯ä»¥è‡ªåŠ¨å¯¹ä¸€äº›ç®€å•çš„é”™è¯¯å’Œè­¦å‘Šè¿›è¡Œä¿®å¤ï¼Œå³å‡»é€‰é¡¹`fix ESlint problems`ï¼Œè¿™æ ·å¯ä»¥å¤§å¤§å‡å°‘æˆ‘ä»¬ä¿®å¤ç¼–ç è§„èŒƒçš„æ—¶é—´ï¼Œä¸å¾—ä¸è¯´ï¼ŒwebstormçœŸæ˜¯å‰ç«¯å¼€å‘çš„ç¥å™¨å•Šã€‚

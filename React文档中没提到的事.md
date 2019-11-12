@@ -1,49 +1,49 @@
-## ReactÎÄµµÖÐÃ»Ìáµ½µÄÊÂ
+## Reactæ–‡æ¡£ä¸­æ²¡æåˆ°çš„äº‹
 
-**Ç°ÑÔ**
+**å‰è¨€**
 
-¶ÔºÜ¶à react ÐÂÊÖÀ´Ëµ£¬ÍøÉÏÄÜÕÒµ½µÄ×ÊÔ´´ó¶¼ÊÇÐ©¼òµ¥µÄ tutorial £¬ReactÎÄµµÒ²ÊÇ·Ç³£ÖµµÃÒ»¶ÁµÄ£¬Ó¢ÎÄ°æµÄÓÐ×Å·Ç³£ÏêÏ¸µÄ½éÉÜ¡£ËüÃÇÄÜ½Ì»áÄãÈçºÎÊ¹ÓÃ react £¬µ«²¢²»»á¸æËßÄãÔõÃ´ÔÚÊµ¼ÊÏîÄ¿ÖÐÓÅÑÅµÄ×éÖ¯ºÍ±àÐ´ react ´úÂë¡£ÓÃ¹È¸èËÑÖÐÎÄ¡° React ×î¼ÑÊµ¼ù¡±·¢ÏÖÇ°Á½Ò³¼¸ºõÈ«¶¼ÊÇÍ¬Ò»Æª¹úÍâÎÄÕÂµÄÒëÎÄ...ËùÒÔÎÒ×Ü½áÁËÏÂ×Ô¼º¹ýÈ¥ÄÇ¸öÏîÄ¿Ê¹ÓÃ React ²È¹ýµÄÒ»Ð©¿Ó£¬Ò²ÕûÀíÁËÒ»Ð©±ðÈËµÄ¹Ûµã£¬Ï£Íû¶Ô²¿·Ö react Ê¹ÓÃÕßÓÐ°ïÖú¡£
+å¯¹å¾ˆå¤š react æ–°æ‰‹æ¥è¯´ï¼Œç½‘ä¸Šèƒ½æ‰¾åˆ°çš„èµ„æºå¤§éƒ½æ˜¯äº›ç®€å•çš„ tutorial ï¼ŒReactæ–‡æ¡£ä¹Ÿæ˜¯éžå¸¸å€¼å¾—ä¸€è¯»çš„ï¼Œè‹±æ–‡ç‰ˆçš„æœ‰ç€éžå¸¸è¯¦ç»†çš„ä»‹ç»ã€‚å®ƒä»¬èƒ½æ•™ä¼šä½ å¦‚ä½•ä½¿ç”¨ react ï¼Œä½†å¹¶ä¸ä¼šå‘Šè¯‰ä½ æ€Žä¹ˆåœ¨å®žé™…é¡¹ç›®ä¸­ä¼˜é›…çš„ç»„ç»‡å’Œç¼–å†™ react ä»£ç ã€‚ç”¨è°·æ­Œæœä¸­æ–‡â€œ React æœ€ä½³å®žè·µâ€å‘çŽ°å‰ä¸¤é¡µå‡ ä¹Žå…¨éƒ½æ˜¯åŒä¸€ç¯‡å›½å¤–æ–‡ç« çš„è¯‘æ–‡...æ‰€ä»¥æˆ‘æ€»ç»“äº†ä¸‹è‡ªå·±è¿‡åŽ»é‚£ä¸ªé¡¹ç›®ä½¿ç”¨ React è¸©è¿‡çš„ä¸€äº›å‘ï¼Œä¹Ÿæ•´ç†äº†ä¸€äº›åˆ«äººçš„è§‚ç‚¹ï¼Œå¸Œæœ›å¯¹éƒ¨åˆ† react ä½¿ç”¨è€…æœ‰å¸®åŠ©ã€‚
 
-#### ReactÓëAJAX
+#### Reactä¸ŽAJAX
 
-ReactÖ»¸ºÔð´¦ÀíViewÕâÒ»²ã£¬Ëü±¾Éí²»Éæ¼°ÍøÂçÇëÇó/AJAX£¬ËùÒÔÕâÀïÎÒÃÇÐèÇó¿¼ÂÇÁ½¸öÎÊÌâ£º
+Reactåªè´Ÿè´£å¤„ç†Viewè¿™ä¸€å±‚ï¼Œå®ƒæœ¬èº«ä¸æ¶‰åŠç½‘ç»œè¯·æ±‚/AJAXï¼Œæ‰€ä»¥è¿™é‡Œæˆ‘ä»¬éœ€æ±‚è€ƒè™‘ä¸¤ä¸ªé—®é¢˜ï¼š
 
-> - µÚÒ»£¬ÓÃÊ²Ã´¼¼Êõ´Ó·þÎñ¶Ë»ñÈ¡Êý¾Ý£»
-> - µÚ¶þ£¬»ñÈ¡µ½µÄÊý¾ÝÓ¦¸Ã·ÅÔÚreact×é¼þµÄÊ²Ã´Î»ÖÃ¡£
+> - ç¬¬ä¸€ï¼Œç”¨ä»€ä¹ˆæŠ€æœ¯ä»ŽæœåŠ¡ç«¯èŽ·å–æ•°æ®ï¼›
+> - ç¬¬äºŒï¼ŒèŽ·å–åˆ°çš„æ•°æ®åº”è¯¥æ”¾åœ¨reactç»„ä»¶çš„ä»€ä¹ˆä½ç½®ã€‚
  
-React¹Ù·½Ìá¹©ÁËÒ»ÖÖ½â¾ö·½°¸£º[Load Initial Data via AJAX](https://facebook.github.io/react/tips/initial-ajax.html)
+Reactå®˜æ–¹æä¾›äº†ä¸€ç§è§£å†³æ–¹æ¡ˆï¼š[Load Initial Data via AJAX](https://facebook.github.io/react/tips/initial-ajax.html)
 
-Ê¹ÓÃjQueryµÄAjax·½·¨£¬ÔÚÒ»¸ö×é¼þµÄ``componentDidMount()``ÖÐ·¢ajaxÇëÇó£¬ÄÃµ½µÄÊý¾Ý´æÔÚ×é¼þ×Ô¼ºµÄstateÖÐ£¬²¢µ÷ÓÃsetState·½·¨È¥¸üÐÂUI¡£Èç¹ûÊÇÒì²½»ñÈ¡Êý¾Ý£¬ÔòÔÚ``componentWillUnmount``ÖÐÈ¡Ïû·¢ËÍÇëÇó¡£
+ä½¿ç”¨jQueryçš„Ajaxæ–¹æ³•ï¼Œåœ¨ä¸€ä¸ªç»„ä»¶çš„``componentDidMount()``ä¸­å‘ajaxè¯·æ±‚ï¼Œæ‹¿åˆ°çš„æ•°æ®å­˜åœ¨ç»„ä»¶è‡ªå·±çš„stateä¸­ï¼Œå¹¶è°ƒç”¨setStateæ–¹æ³•åŽ»æ›´æ–°UIã€‚å¦‚æžœæ˜¯å¼‚æ­¥èŽ·å–æ•°æ®ï¼Œåˆ™åœ¨``componentWillUnmount``ä¸­å–æ¶ˆå‘é€è¯·æ±‚ã€‚
 
-Èç¹ûÖ»ÊÇÎªÁËÊ¹ÓÃjQueryµÄAjax·½·¨¾ÍÒýÈëÕû¸öjQuery¿â£¬¼ÈÊÇÒ»ÖÖÀË·ÑÓÖ¼Ó´óÁËÕû¸öÓ¦ÓÃµÄÌå»ý¡£ÄÇÎÒÃÇ»¹ÓÐÊ²Ã´ÆäËûµÄÑ¡ÔñÂð£¿ÊÂÊµÉÏÊÇÓÐºÜ¶àµÄ£º[fetch()](https://developer.mozilla.org/en-US/docs/Web/API/GlobalFetch/fetch)¡¢[fetch polyfill](https://github.com/github/fetch) ¡¢[axios](https://github.com/mzabriskie/axios)...ÆäÖÐ×îÐèÒªÎÒÃÇ¹Ø×¢µÄÊÇ``window.fetch()``,ËüÊÇÒ»¸ö¼ò½à¡¢±ê×¼»¯µÄjavascriptµÄAjax API¡£ÔÚChromeºÍFirefoxÖÐÒÑ¾­¿ÉÒÔÊ¹ÓÃ£¬Èç¹ûÐèÒª¼æÈÝÆäËûä¯ÀÀÆ÷£¬¿ÉÒÔÊ¹ÓÃfetch polyfill¡£
+å¦‚æžœåªæ˜¯ä¸ºäº†ä½¿ç”¨jQueryçš„Ajaxæ–¹æ³•å°±å¼•å…¥æ•´ä¸ªjQueryåº“ï¼Œæ—¢æ˜¯ä¸€ç§æµªè´¹åˆåŠ å¤§äº†æ•´ä¸ªåº”ç”¨çš„ä½“ç§¯ã€‚é‚£æˆ‘ä»¬è¿˜æœ‰ä»€ä¹ˆå…¶ä»–çš„é€‰æ‹©å—ï¼Ÿäº‹å®žä¸Šæ˜¯æœ‰å¾ˆå¤šçš„ï¼š[fetch()](https://developer.mozilla.org/en-US/docs/Web/API/GlobalFetch/fetch)ã€[fetch polyfill](https://github.com/github/fetch) ã€[axios](https://github.com/mzabriskie/axios)...å…¶ä¸­æœ€éœ€è¦æˆ‘ä»¬å…³æ³¨çš„æ˜¯``window.fetch()``,å®ƒæ˜¯ä¸€ä¸ªç®€æ´ã€æ ‡å‡†åŒ–çš„javascriptçš„Ajax APIã€‚åœ¨Chromeå’ŒFirefoxä¸­å·²ç»å¯ä»¥ä½¿ç”¨ï¼Œå¦‚æžœéœ€è¦å…¼å®¹å…¶ä»–æµè§ˆå™¨ï¼Œå¯ä»¥ä½¿ç”¨fetch polyfillã€‚
 
-React¹Ù·½ÎÄµµÖ»¸æËßÁËÎÒÃÇÔÚÒ»¸öµ¥Ò»×é¼þÖÐÈçºÎÍ¨¹ýajax´Ó·þÎñÆ÷¶Ë»ñÈ¡Êý¾Ý£¬µ«²¢Ã»ÓÐ¸æËßÎÒÃÇÔÚÒ»¸öÍêÕûµÄÊµ¼ÊÏîÄ¿ÖÐµ½µ×Ó¦¸Ã°ÑÊý¾Ý´æÔÚÄÄÐ©×é¼þÖÐ£¬Õâ²¿·ÖÈç¹ûÈ±·¦¹æ·¶µÄ»°£¬»áµ¼ÖÂÕû¸öÏîÄ¿±äµÃ»ìÂÒ¡¢ÄÑÒÔÎ¬»¤¡£ÏÂÃæ¸ø³öÈýÖÖ±È½ÏºÃµÄÊµ¼ù£º
+Reactå®˜æ–¹æ–‡æ¡£åªå‘Šè¯‰äº†æˆ‘ä»¬åœ¨ä¸€ä¸ªå•ä¸€ç»„ä»¶ä¸­å¦‚ä½•é€šè¿‡ajaxä»ŽæœåŠ¡å™¨ç«¯èŽ·å–æ•°æ®ï¼Œä½†å¹¶æ²¡æœ‰å‘Šè¯‰æˆ‘ä»¬åœ¨ä¸€ä¸ªå®Œæ•´çš„å®žé™…é¡¹ç›®ä¸­åˆ°åº•åº”è¯¥æŠŠæ•°æ®å­˜åœ¨å“ªäº›ç»„ä»¶ä¸­ï¼Œè¿™éƒ¨åˆ†å¦‚æžœç¼ºä¹è§„èŒƒçš„è¯ï¼Œä¼šå¯¼è‡´æ•´ä¸ªé¡¹ç›®å˜å¾—æ··ä¹±ã€éš¾ä»¥ç»´æŠ¤ã€‚ä¸‹é¢ç»™å‡ºä¸‰ç§æ¯”è¾ƒå¥½çš„å®žè·µï¼š
 
-1. ËùÓÐµÄÊý¾ÝÇëÇóºÍ¹ÜÀí¶¼´æ·ÅÔÚÎ¨Ò»µÄÒ»¸ö¸ù×é¼þ
+1. æ‰€æœ‰çš„æ•°æ®è¯·æ±‚å’Œç®¡ç†éƒ½å­˜æ”¾åœ¨å”¯ä¸€çš„ä¸€ä¸ªæ ¹ç»„ä»¶
  
-ÈÃ¸¸×é¼þ/¸ù×é¼þ¼¯ÖÐ·¢ËÍËùÓÐµÄajaxÇëÇó£¬°Ñ´Ó·þÎñ¶Ë»ñÈ¡µÄÊý¾ÝÍ³Ò»´æ·ÅÔÚÕâ¸ö×é¼þµÄstateÖÐ£¬ÔÙÍ¨¹ýprops°ÑÊý¾Ý´«¸ø×Ó×é¼þ¡£ÕâÖÖ·½·¨Ö÷ÒªÊÇÕë¶Ô×é¼þÊ÷²»ÊÇºÜ¸´ÔÓµÄÐ¡ÐÍÓ¦ÓÃ¡£È±µã¾ÍÊÇµ±×é¼þÊ÷µÄ²ã¼¶±ä¶àÁËÒÔºó£¬ÐèÒª°ÑÊý¾ÝÒ»²ãÒ»²ãµØ´«¸ø×Ó×é¼þ£¬Ð´ÆðÀ´Âé·³£¬ÐÔÄÜÒ²²»ºÃ¡£
+è®©çˆ¶ç»„ä»¶/æ ¹ç»„ä»¶é›†ä¸­å‘é€æ‰€æœ‰çš„ajaxè¯·æ±‚ï¼ŒæŠŠä»ŽæœåŠ¡ç«¯èŽ·å–çš„æ•°æ®ç»Ÿä¸€å­˜æ”¾åœ¨è¿™ä¸ªç»„ä»¶çš„stateä¸­ï¼Œå†é€šè¿‡propsæŠŠæ•°æ®ä¼ ç»™å­ç»„ä»¶ã€‚è¿™ç§æ–¹æ³•ä¸»è¦æ˜¯é’ˆå¯¹ç»„ä»¶æ ‘ä¸æ˜¯å¾ˆå¤æ‚çš„å°åž‹åº”ç”¨ã€‚ç¼ºç‚¹å°±æ˜¯å½“ç»„ä»¶æ ‘çš„å±‚çº§å˜å¤šäº†ä»¥åŽï¼Œéœ€è¦æŠŠæ•°æ®ä¸€å±‚ä¸€å±‚åœ°ä¼ ç»™å­ç»„ä»¶ï¼Œå†™èµ·æ¥éº»çƒ¦ï¼Œæ€§èƒ½ä¹Ÿä¸å¥½ã€‚
 
-2. ÉèÖÃ¶à¸öÈÝÆ÷×é¼þ×¨ÃÅ´¦ÀíÊý¾ÝÇëÇóºÍ¹ÜÀí
+2. è®¾ç½®å¤šä¸ªå®¹å™¨ç»„ä»¶ä¸“é—¨å¤„ç†æ•°æ®è¯·æ±‚å’Œç®¡ç†
 
-ÆäÊµ¸úµÚÒ»ÖÖ·½·¨ÀàËÆ£¬Ö»²»¹ýÉèÖÃ¶à¸öÈÝÆ÷×é¼þÀ´¸ºÔðÊý¾ÝÇëÇóºÍ×´Ì¬¹ÜÀí¡£ÕâÀïÎÒÃÇÐèÒªÇø·ÖÁ½ÖÖ²»Í¬ÀàÐÍµÄ×é¼þ£¬Ò»ÖÖÊÇÕ¹Ê¾ÐÔ×é¼þ£¨presentational component£©£¬ÁíÒ»ÖÖÊÇÈÝÆ÷ÐÔ×é¼þ£¨container component£©¡£Õ¹Ê¾ÐÔ×é¼þ±¾Éí²»ÓµÓÐÈÎºÎ×´Ì¬£¬ËùÓÐµÄÊý¾Ý¶¼´ÓÈÝÆ÷×é¼þÖÐ»ñµÃ£¬ÔÚÈÝÆ÷×é¼þÖÐ·¢ËÍajaxÇëÇó¡£Á½Õß¸üÏêÏ¸µÄÃèÊö£¬¿ÉÒÔÔÄ¶ÁÏÂÕâÆªÎÄÕÂ£º[Presentational and Container Components](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0#.ch9xqg6s4)
+å…¶å®žè·Ÿç¬¬ä¸€ç§æ–¹æ³•ç±»ä¼¼ï¼Œåªä¸è¿‡è®¾ç½®å¤šä¸ªå®¹å™¨ç»„ä»¶æ¥è´Ÿè´£æ•°æ®è¯·æ±‚å’ŒçŠ¶æ€ç®¡ç†ã€‚è¿™é‡Œæˆ‘ä»¬éœ€è¦åŒºåˆ†ä¸¤ç§ä¸åŒç±»åž‹çš„ç»„ä»¶ï¼Œä¸€ç§æ˜¯å±•ç¤ºæ€§ç»„ä»¶ï¼ˆpresentational componentï¼‰ï¼Œå¦ä¸€ç§æ˜¯å®¹å™¨æ€§ç»„ä»¶ï¼ˆcontainer componentï¼‰ã€‚å±•ç¤ºæ€§ç»„ä»¶æœ¬èº«ä¸æ‹¥æœ‰ä»»ä½•çŠ¶æ€ï¼Œæ‰€æœ‰çš„æ•°æ®éƒ½ä»Žå®¹å™¨ç»„ä»¶ä¸­èŽ·å¾—ï¼Œåœ¨å®¹å™¨ç»„ä»¶ä¸­å‘é€ajaxè¯·æ±‚ã€‚ä¸¤è€…æ›´è¯¦ç»†çš„æè¿°ï¼Œå¯ä»¥é˜…è¯»ä¸‹è¿™ç¯‡æ–‡ç« ï¼š[Presentational and Container Components](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0#.ch9xqg6s4)
 
-Ò»¸ö¾ßÌåµÄÀý×Ó£º
+ä¸€ä¸ªå…·ä½“çš„ä¾‹å­ï¼š
 
-¼ÙÉèÎÒÃÇÐèÒªÕ¹Ê¾ÓÃ»§µÄÐÕÃûºÍÍ·Ïñ£¬Ê×ÏÈ´´½¨Ò»¸öÕ¹Ê¾ÐÔ×é¼þ``<UserProfile />``,Ëü½ÓÊÜÁ½¸öProps£º``name``ºÍ``profileImage``¡£Õâ¸ö×é¼þÄÚ²¿Ã»ÓÐÈÎºÎ¹ØÓÚAjaxµÄ´úÂë¡£
+å‡è®¾æˆ‘ä»¬éœ€è¦å±•ç¤ºç”¨æˆ·çš„å§“åå’Œå¤´åƒï¼Œé¦–å…ˆåˆ›å»ºä¸€ä¸ªå±•ç¤ºæ€§ç»„ä»¶``<UserProfile />``,å®ƒæŽ¥å—ä¸¤ä¸ªPropsï¼š``name``å’Œ``profileImage``ã€‚è¿™ä¸ªç»„ä»¶å†…éƒ¨æ²¡æœ‰ä»»ä½•å…³äºŽAjaxçš„ä»£ç ã€‚
 
-È»ºó´´½¨Ò»¸öÈÝÆ÷×é¼þ``<UserProfileContainer />``£¬Ëü½ÓÊÜÒ»¸öuserIdµÄ²ÎÊý£¬·¢ËÍAjaxÇëÇó´Ó·þÎñÆ÷»ñÈ¡Êý¾Ý´æÔÚ``state``ÖÐ£¬ÔÙÍ¨¹ý``props``´«¸ø``<UserProfile />``×é¼þ¡£
+ç„¶åŽåˆ›å»ºä¸€ä¸ªå®¹å™¨ç»„ä»¶``<UserProfileContainer />``ï¼Œå®ƒæŽ¥å—ä¸€ä¸ªuserIdçš„å‚æ•°ï¼Œå‘é€Ajaxè¯·æ±‚ä»ŽæœåŠ¡å™¨èŽ·å–æ•°æ®å­˜åœ¨``state``ä¸­ï¼Œå†é€šè¿‡``props``ä¼ ç»™``<UserProfile />``ç»„ä»¶ã€‚
 
-3. Ê¹ÓÃRedux»òFluxµÄÇé¿ö
+3. ä½¿ç”¨Reduxæˆ–Fluxçš„æƒ…å†µ
 
-Redux¹ÜÀí×´Ì¬ºÍÊý¾Ý£¬Ajax´Ó·þÎñÆ÷¶Ë»ñÈ¡Êý¾Ý£¬ËùÒÔºÜÏÔÈ»µ±ÎÒÃÇÊ¹ÓÃÁËReduxÊ±£¬Ó¦¸Ã°ÑËùÓÐµÄÍøÂçÇëÇó¶¼½»¸øreduxÀ´½â¾ö¡£¾ßÌåÀ´Ëµ£¬Ó¦¸ÃÊÇ·ÅÔÚAsync Actions¡£Èç¹ûÓÃÆäËûÀàFlux¿âµÄ»°£¬½â¾ö·½Ê½¶¼²î²»¶à£¬¶¼ÊÇÔÚactionsÖÐ·¢ËÍÍøÂçÇëÇó£¬Ê¹ÓÃpromise fetch»òÕßjqueryµÄajax¾Í¿´ÏîÄ¿µÄÐèÒªºÍ×Ô¼ºµÄÏ²ºÃÁË¡£
+Reduxç®¡ç†çŠ¶æ€å’Œæ•°æ®ï¼ŒAjaxä»ŽæœåŠ¡å™¨ç«¯èŽ·å–æ•°æ®ï¼Œæ‰€ä»¥å¾ˆæ˜¾ç„¶å½“æˆ‘ä»¬ä½¿ç”¨äº†Reduxæ—¶ï¼Œåº”è¯¥æŠŠæ‰€æœ‰çš„ç½‘ç»œè¯·æ±‚éƒ½äº¤ç»™reduxæ¥è§£å†³ã€‚å…·ä½“æ¥è¯´ï¼Œåº”è¯¥æ˜¯æ”¾åœ¨Async Actionsã€‚å¦‚æžœç”¨å…¶ä»–ç±»Fluxåº“çš„è¯ï¼Œè§£å†³æ–¹å¼éƒ½å·®ä¸å¤šï¼Œéƒ½æ˜¯åœ¨actionsä¸­å‘é€ç½‘ç»œè¯·æ±‚ï¼Œä½¿ç”¨promise fetchæˆ–è€…jqueryçš„ajaxå°±çœ‹é¡¹ç›®çš„éœ€è¦å’Œè‡ªå·±çš„å–œå¥½äº†ã€‚
 
-#### Ê¹ÓÃ PropTypes ºÍ getDefaultProps()
+#### ä½¿ç”¨ PropTypes å’Œ getDefaultProps()
 
-> 1. Ò»¶¨ÒªÐ´PropTypes£¬ÇÐÄªÎªÁËÊ¡ÊÂ¶ø²»Ð´
-> 2. Èç¹ûÒ»¸öProps²»ÊÇrequied£¬Ò»¶¨ÔÚgetDefaultPropsÖÐÉèÖÃËü
-``React.PropTypes``Ö÷ÒªÓÃÀ´ÑéÖ¤×é¼þ½ÓÊÕµ½µÄpropsÊÇ·ñÎªÕýÈ·µÄÊý¾ÝÀàÐÍ£¬Èç¹û²»ÕýÈ·£¬consoleÖÐ¾Í»á³öÏÖ¶ÔÓ¦µÄwarning¡£³öÓÚÐÔÄÜ·½ÃæµÄ¿¼ÂÇ£¬Õâ¸öAPIÖ»ÔÚ¿ª·¢»·¾³ÏÂÊ¹ÓÃ¡£
+> 1. ä¸€å®šè¦å†™PropTypesï¼Œåˆ‡èŽ«ä¸ºäº†çœäº‹è€Œä¸å†™
+> 2. å¦‚æžœä¸€ä¸ªPropsä¸æ˜¯requiedï¼Œä¸€å®šåœ¨getDefaultPropsä¸­è®¾ç½®å®ƒ
+``React.PropTypes``ä¸»è¦ç”¨æ¥éªŒè¯ç»„ä»¶æŽ¥æ”¶åˆ°çš„propsæ˜¯å¦ä¸ºæ­£ç¡®çš„æ•°æ®ç±»åž‹ï¼Œå¦‚æžœä¸æ­£ç¡®ï¼Œconsoleä¸­å°±ä¼šå‡ºçŽ°å¯¹åº”çš„warningã€‚å‡ºäºŽæ€§èƒ½æ–¹é¢çš„è€ƒè™‘ï¼Œè¿™ä¸ªAPIåªåœ¨å¼€å‘çŽ¯å¢ƒä¸‹ä½¿ç”¨ã€‚
 
-»ù±¾Ê¹ÓÃ·½·¨£º
+åŸºæœ¬ä½¿ç”¨æ–¹æ³•ï¼š
 
 ```js
 propTypes: {
@@ -51,7 +51,7 @@ propTypes: {
     myBool: React.PropTypes.bool,
     myFunc: React.PropTypes.func,
     myNumber: React.PropTypes.number,
-    myString: React.PropTypes.string£¬
+    myString: React.PropTypes.stringï¼Œ
      
      // You can chain any of the above with `isRequired` to make sure a warning
     // is shown if the prop isn't provided.
@@ -59,7 +59,7 @@ propTypes: {
 } 
 ```
 
-¼ÙÈçÎÒÃÇprops²»ÊÇÒÔÉÏÀàÐÍ£¬¶øÊÇÓµÓÐ¸´ÔÓ½á¹¹µÄ¶ÔÏóÔõÃ´°ì£¿±ÈÈçÏÂÃæÕâ¸ö£º
+å‡å¦‚æˆ‘ä»¬propsä¸æ˜¯ä»¥ä¸Šç±»åž‹ï¼Œè€Œæ˜¯æ‹¥æœ‰å¤æ‚ç»“æž„çš„å¯¹è±¡æ€Žä¹ˆåŠžï¼Ÿæ¯”å¦‚ä¸‹é¢è¿™ä¸ªï¼š
 
 ```js
 {
@@ -68,7 +68,7 @@ propTypes: {
 }
 ```
 
-µ±È»£¬ÎÒÃÇ¿ÉÒÔÖ±½ÓÓÃ``React.PropTypes.object``,µ«ÊÇ¶ÔÏóÄÚ²¿µÄÊý¾ÝÎÒÃÇÈ´ÎÞ·¨ÑéÖ¤¡£
+å½“ç„¶ï¼Œæˆ‘ä»¬å¯ä»¥ç›´æŽ¥ç”¨``React.PropTypes.object``,ä½†æ˜¯å¯¹è±¡å†…éƒ¨çš„æ•°æ®æˆ‘ä»¬å´æ— æ³•éªŒè¯ã€‚
 
 ```js
 propTypes: {
@@ -76,7 +76,7 @@ propTypes: {
 }
 ```
 
-½ø½×Ê¹ÓÃ·½·¨£º``shape()`` ºÍ ``arrayOf()``
+è¿›é˜¶ä½¿ç”¨æ–¹æ³•ï¼š``shape()`` å’Œ ``arrayOf()``
 
 ```js
 propTypes: {
@@ -87,7 +87,7 @@ propTypes: {
 }
 ```
 
-ÏÂÃæÊÇÒ»¸ö¸ü¸´ÔÓµÄProps£º
+ä¸‹é¢æ˜¯ä¸€ä¸ªæ›´å¤æ‚çš„Propsï¼š
 
 ```js
 [
@@ -108,7 +108,7 @@ propTypes: {
 ]
 ```
 
-×ÛºÏÉÏÃæ£¬Ð´ÆðÀ´Ó¦¸Ã¾Í²»ÄÑÁË£º
+ç»¼åˆä¸Šé¢ï¼Œå†™èµ·æ¥åº”è¯¥å°±ä¸éš¾äº†ï¼š
 
 ```js
 propTypes: {
@@ -122,9 +122,9 @@ propTypes: {
 }
 ```
 
-#### °Ñ¼ÆËãºÍÌõ¼þÅÐ¶Ï¶¼½»¸ø render() ·½·¨°É
+#### æŠŠè®¡ç®—å’Œæ¡ä»¶åˆ¤æ–­éƒ½äº¤ç»™ render() æ–¹æ³•å§
 
-1 ×é¼þµÄstateÖÐ²»ÄÜ³öÏÖprops
+1 ç»„ä»¶çš„stateä¸­ä¸èƒ½å‡ºçŽ°props
 
 ```js
  // BAD:
@@ -151,7 +151,7 @@ render () {
 }
 ```
 
-µ±È»£¬¸´ÔÓµÄdisplay logicÒ²Ó¦¸Ã±ÜÃâÈ«¶Ñ·ÅÔÚrender()ÖÐ£¬ÒòÎªÄÇÑù¿ÉÄÜµ¼ÖÂÕû¸örender()·½·¨±äµÃÓ·Ö×£¬²»ÓÅÑÅ¡£ÎÒÃÇ¿ÉÒÔ°ÑÒ»Ð©¸´ÔÓµÄÂß¼­Í¨¹ýhelper functionÒÆ³öÈ¥¡£
+å½“ç„¶ï¼Œå¤æ‚çš„display logicä¹Ÿåº”è¯¥é¿å…å…¨å †æ”¾åœ¨render()ä¸­ï¼Œå› ä¸ºé‚£æ ·å¯èƒ½å¯¼è‡´æ•´ä¸ªrender()æ–¹æ³•å˜å¾—è‡ƒè‚¿ï¼Œä¸ä¼˜é›…ã€‚æˆ‘ä»¬å¯ä»¥æŠŠä¸€äº›å¤æ‚çš„é€»è¾‘é€šè¿‡helper functionç§»å‡ºåŽ»ã€‚
 
 ```js
 // GOOD: helper function
@@ -164,7 +164,7 @@ render () {
 }
 ```
 
-2 ±£³ÖstateµÄ¼ò½à£¬²»Òª³öÏÖ¼ÆËãµÃÀ´µÄstate
+2 ä¿æŒstateçš„ç®€æ´ï¼Œä¸è¦å‡ºçŽ°è®¡ç®—å¾—æ¥çš„state
 
 ```js
 // WRONG:
@@ -190,7 +190,7 @@ render () {
 }
 ```
 
-3 ÄÜÓÃÈýÔªÅÐ¶Ï·û£¬¾Í²»ÓÃIf£¬Ö±½Ó·ÅÔÚrender()Àï
+3 èƒ½ç”¨ä¸‰å…ƒåˆ¤æ–­ç¬¦ï¼Œå°±ä¸ç”¨Ifï¼Œç›´æŽ¥æ”¾åœ¨render()é‡Œ
 
 ```
 // BAD: 
@@ -222,7 +222,7 @@ render () {
 }
 ```
 
-4 ²¼¶ûÖµ¶¼²»ÄÜ¸ã¶¨µÄ£¬½»¸øIIFE°É
+4 å¸ƒå°”å€¼éƒ½ä¸èƒ½æžå®šçš„ï¼Œäº¤ç»™IIFEå§
 
 [Immediately-invoked function expression](https://en.wikipedia.org/wiki/Immediately-invoked_function_expression)
 
@@ -247,11 +247,11 @@ return (
 );
 ```
 
-5 ²»Òª°Ñdisplay logicÐ´ÔÚ``componentWillReceiveProps``»ò``componentWillMount``ÖÐ£¬°ÑËüÃÇ¶¼ÒÆµ½render()ÖÐÈ¥¡£
+5 ä¸è¦æŠŠdisplay logicå†™åœ¨``componentWillReceiveProps``æˆ–``componentWillMount``ä¸­ï¼ŒæŠŠå®ƒä»¬éƒ½ç§»åˆ°render()ä¸­åŽ»ã€‚
 
-#### ÈçºÎ¶¯Ì¬´¦Àí classNames
+#### å¦‚ä½•åŠ¨æ€å¤„ç† classNames
 
-1 Ê¹ÓÃ²¼¶ûÖµ
+1 ä½¿ç”¨å¸ƒå°”å€¼
 
 ```
 // BAD:
@@ -288,7 +288,7 @@ constructor () {
   }
 ```
 
-2 Ê¹ÓÃ[classnames](https://github.com/JedWatson/classnames)Õâ¸öÐ¡¹¤¾ßÀ´Æ´½ÓclassNames£º
+2 ä½¿ç”¨[classnames](https://github.com/JedWatson/classnames)è¿™ä¸ªå°å·¥å…·æ¥æ‹¼æŽ¥classNamesï¼š
 
 ```
 // BEFORE:
@@ -303,7 +303,7 @@ var Button = React.createClass({
 ```
 
 ```
-// AFTER£º
+// AFTERï¼š
 var classNames = require('classnames');
 
 var Button = React.createClass({

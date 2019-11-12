@@ -1,12 +1,12 @@
-## JavascriptÖÐµÄnew¹Ø¼ü×Ö
+## Javascriptä¸­çš„newå…³é”®å­—
 
-JavascriptÖÐ£¬ÊµÀý»¯Ò»¸ö¶ÔÏó£¬»áÓÃµ½new¹Ø¼ü×Ö¡£
+Javascriptä¸­ï¼Œå®žä¾‹åŒ–ä¸€ä¸ªå¯¹è±¡ï¼Œä¼šç”¨åˆ°newå…³é”®å­—ã€‚
 
-¾­³£ÓÐÈË»áÎÊÎÒ£¬¶ÔÓÚÒ»¸öº¯Êý£¬Ê²Ã´Ê±ºò¸ÃÊ¹ÓÃnew¹Ø¼ü×Ö¡£
+ç»å¸¸æœ‰äººä¼šé—®æˆ‘ï¼Œå¯¹äºŽä¸€ä¸ªå‡½æ•°ï¼Œä»€ä¹ˆæ—¶å€™è¯¥ä½¿ç”¨newå…³é”®å­—ã€‚
 
-ÔÚ»Ø´ðÕâ¸öÎÊÌâÖ®Ç°£¬ÐèÒªÏÈÁË½âÇå³þnewµÄ±¾ÖÊ£¬ÔÚµ÷ÓÃnew FunctionµÄÊ±ºò£¬new×öÁËÊ²Ã´²Ù×÷¡£
+åœ¨å›žç­”è¿™ä¸ªé—®é¢˜ä¹‹å‰ï¼Œéœ€è¦å…ˆäº†è§£æ¸…æ¥šnewçš„æœ¬è´¨ï¼Œåœ¨è°ƒç”¨new Functionçš„æ—¶å€™ï¼Œnewåšäº†ä»€ä¹ˆæ“ä½œã€‚
 
-ÏÈ¿´ÈçÏÂ´úÂë£º
+å…ˆçœ‹å¦‚ä¸‹ä»£ç ï¼š
 
 ```js
 	function classA(){
@@ -21,26 +21,26 @@ JavascriptÖÐ£¬ÊµÀý»¯Ò»¸ö¶ÔÏó£¬»áÓÃµ½new¹Ø¼ü×Ö¡£
 
 ``` var b =new classA();```
 
-Õâ¾äÖÐ£¬new×öÁËÒÔÏÂ¼¸¼þÊÂÇé¡£
+è¿™å¥ä¸­ï¼Œnewåšäº†ä»¥ä¸‹å‡ ä»¶äº‹æƒ…ã€‚
 
-1 ´´½¨Ò»¸öÐÂµÄ¶ÔÏó£¬Õâ¸ö¶ÔÏóµÄÀàÐÍÊÇobject;
-2 ²éÕÒclassµÄprototypeÉÏµÄËùÓÐ·½·¨¡¢ÊôÐÔ£¬¸´ÖÆÒ»·Ý¸ø´´½¨µÄObject
-3 ½«¹¹Ôìº¯ÊýclassAÄÚ²¿µÄthisÖ¸Ïò´´½¨µÄObject
-4 ´´½¨µÄObjectµÄ__proto__Ö¸ÏòclassµÄprototype
-5 Ö´ÐÐ¹¹Ôìº¯Êýclass
-6 ·µ»ØÐÂ´´½¨µÄ¶ÔÏó¸ø±äÁ¿b
+1 åˆ›å»ºä¸€ä¸ªæ–°çš„å¯¹è±¡ï¼Œè¿™ä¸ªå¯¹è±¡çš„ç±»åž‹æ˜¯object;
+2 æŸ¥æ‰¾classçš„prototypeä¸Šçš„æ‰€æœ‰æ–¹æ³•ã€å±žæ€§ï¼Œå¤åˆ¶ä¸€ä»½ç»™åˆ›å»ºçš„Object
+3 å°†æž„é€ å‡½æ•°classAå†…éƒ¨çš„thisæŒ‡å‘åˆ›å»ºçš„Object
+4 åˆ›å»ºçš„Objectçš„__proto__æŒ‡å‘classçš„prototype
+5 æ‰§è¡Œæž„é€ å‡½æ•°class
+6 è¿”å›žæ–°åˆ›å»ºçš„å¯¹è±¡ç»™å˜é‡b
 
-Õâ¸öÁ÷³ÌÓ¦¸Ã±È½ÏºÃÀí½âµÄ¡£ÕâÀïÔÙ½âÊÍÒ»ÏÂ£º
+è¿™ä¸ªæµç¨‹åº”è¯¥æ¯”è¾ƒå¥½ç†è§£çš„ã€‚è¿™é‡Œå†è§£é‡Šä¸€ä¸‹ï¼š
 
-1 ¹¹Ôìº¯Êý£ºÎÒÃÇÒ»°ã°Ñnew ºóÃæµÄº¯Êý³ÆÎª¹¹Ôìº¯Êý£¬Èçnew classA()£¬ÆäÖÐclassA¾ÍÎª¹¹Ôìº¯Êý
-2 µÚËÄµãµÄ__proto__£¬¿ÉÄÜ±È½ÏÄÑÀí½â¡£
+1 æž„é€ å‡½æ•°ï¼šæˆ‘ä»¬ä¸€èˆ¬æŠŠnew åŽé¢çš„å‡½æ•°ç§°ä¸ºæž„é€ å‡½æ•°ï¼Œå¦‚new classA()ï¼Œå…¶ä¸­classAå°±ä¸ºæž„é€ å‡½æ•°
+2 ç¬¬å››ç‚¹çš„__proto__ï¼Œå¯èƒ½æ¯”è¾ƒéš¾ç†è§£ã€‚
 
-Ã¿¸ö¶ÔÏó¶¼»áÔÚÆäÄÚ²¿³õÊ¼»¯Ò»¸öÊôÐÔ£¬¾ÍÊÇ__proto__£¬¿ÉÒÔÔÚchromeÖÐµÄµ÷ÊÔÆ÷ÀïÐ´¸ö¶ÔÏó²é¿´ÏÂ¡£**µ±ÎÒÃÇ·ÃÎÊÒ»¸ö¶ÔÏóµÄÊôÐÔÊ±£¬Èç¹ûÕâ¸ö¶ÔÏóÄÚ²¿²»´æÔÚÕâ¸öÊôÐÔ£¬ÄÇÃ´Ëû¾Í»áÈ¥__proto__ÀïÕÒÕâ¸öÊôÐÔ£¬Õâ¸ö__proto__ÓÖ»áÓÐ×Ô¼ºµÄ__proto__£¬ÓÚÊÇ¾ÍÕâÑùÒ»Ö±ÕÒÏÂÈ¥£¬Ò²¾ÍÊÇÎÒÃÇÆ½Ê±ËùËµµÄÔ­ÐÍÁ´µÄ¸ÅÄî¡£
+æ¯ä¸ªå¯¹è±¡éƒ½ä¼šåœ¨å…¶å†…éƒ¨åˆå§‹åŒ–ä¸€ä¸ªå±žæ€§ï¼Œå°±æ˜¯__proto__ï¼Œå¯ä»¥åœ¨chromeä¸­çš„è°ƒè¯•å™¨é‡Œå†™ä¸ªå¯¹è±¡æŸ¥çœ‹ä¸‹ã€‚**å½“æˆ‘ä»¬è®¿é—®ä¸€ä¸ªå¯¹è±¡çš„å±žæ€§æ—¶ï¼Œå¦‚æžœè¿™ä¸ªå¯¹è±¡å†…éƒ¨ä¸å­˜åœ¨è¿™ä¸ªå±žæ€§ï¼Œé‚£ä¹ˆä»–å°±ä¼šåŽ»__proto__é‡Œæ‰¾è¿™ä¸ªå±žæ€§ï¼Œè¿™ä¸ª__proto__åˆä¼šæœ‰è‡ªå·±çš„__proto__ï¼ŒäºŽæ˜¯å°±è¿™æ ·ä¸€ç›´æ‰¾ä¸‹åŽ»ï¼Œä¹Ÿå°±æ˜¯æˆ‘ä»¬å¹³æ—¶æ‰€è¯´çš„åŽŸåž‹é“¾çš„æ¦‚å¿µã€‚
 
-µ±ÎÒÃÇµ÷ÓÃb.show()Ê±£¬Ê×ÏÈbÖÐÃ»ÓÐshowÕâ¸öÊôÐÔ£¬ÓÚÊÇ£¬Ëü¾ÍÐèÒªµ½ËüµÄ__proto__ÖÐÈ¥ÕÒ£¬Ò²¾ÍÊÇClassA.prototype£¬
-¶øÎÒÃÇÔÚÉÏÃæ¶¨ÒåÁËClassA.prototype.show=function(){}; ÓÚÊÇ£¬¾ÍÕÒµ½ÁËÕâ¸ö·½·¨¡£
+å½“æˆ‘ä»¬è°ƒç”¨b.show()æ—¶ï¼Œé¦–å…ˆbä¸­æ²¡æœ‰showè¿™ä¸ªå±žæ€§ï¼ŒäºŽæ˜¯ï¼Œå®ƒå°±éœ€è¦åˆ°å®ƒçš„__proto__ä¸­åŽ»æ‰¾ï¼Œä¹Ÿå°±æ˜¯ClassA.prototypeï¼Œ
+è€Œæˆ‘ä»¬åœ¨ä¸Šé¢å®šä¹‰äº†ClassA.prototype.show=function(){}; äºŽæ˜¯ï¼Œå°±æ‰¾åˆ°äº†è¿™ä¸ªæ–¹æ³•ã€‚
 
-ÔÙÓÃÏÂÃæµÄ´úÂëÀ´Àí½â
+å†ç”¨ä¸‹é¢çš„ä»£ç æ¥ç†è§£
 
 ```js
 	var b={};
@@ -48,28 +48,28 @@ JavascriptÖÐ£¬ÊµÀý»¯Ò»¸ö¶ÔÏó£¬»áÓÃµ½new¹Ø¼ü×Ö¡£
 	classA.call(b);
 ```
 
-×îºóÔÙÓÃÒ»¾ä»°×Ü½á£ºnew¹Ø¼ü×ÖÒÔclassA()ÎªÄ£°å´´½¨ÁËÒ»¸öÐÂµÄ¶ÔÏó£¬Ëü¸´ÖÆÁËclassA¹¹ÔìÆ÷ÖÐµÄËùÓÐ³ÉÔ±±äÁ¿£¬Í¬Ê±thisÖ¸ÏòÐÂ´´½¨µÄ¶ÔÏó¡£
+æœ€åŽå†ç”¨ä¸€å¥è¯æ€»ç»“ï¼šnewå…³é”®å­—ä»¥classA()ä¸ºæ¨¡æ¿åˆ›å»ºäº†ä¸€ä¸ªæ–°çš„å¯¹è±¡ï¼Œå®ƒå¤åˆ¶äº†classAæž„é€ å™¨ä¸­çš„æ‰€æœ‰æˆå‘˜å˜é‡ï¼ŒåŒæ—¶thisæŒ‡å‘æ–°åˆ›å»ºçš„å¯¹è±¡ã€‚
 
-ÓÐ2µãÐèÒª×¢Òâ£º
+æœ‰2ç‚¹éœ€è¦æ³¨æ„ï¼š
 
-1 Èç¹û¹¹Ôìº¯ÊýÄÚÃ»ÓÐ·µ»ØÖµ£¬ÔòÄ¬ÈÏÊÇ·µ»Øthis£¨µ±Ç°ÉÏÏÂÎÄ£©£¬Òª²»È»¾Í·µ»Ø**ÈÎÒâ·ÇÔ­Ê¼ÀàÐÍÖµ**¡£
-2 Èç¹û²»ÓÃnew¹Ø¼ü×Ö£¬Èç
+1 å¦‚æžœæž„é€ å‡½æ•°å†…æ²¡æœ‰è¿”å›žå€¼ï¼Œåˆ™é»˜è®¤æ˜¯è¿”å›žthisï¼ˆå½“å‰ä¸Šä¸‹æ–‡ï¼‰ï¼Œè¦ä¸ç„¶å°±è¿”å›ž**ä»»æ„éžåŽŸå§‹ç±»åž‹å€¼**ã€‚
+2 å¦‚æžœä¸ç”¨newå…³é”®å­—ï¼Œå¦‚
 
 ```js
 	var b = classA();
 ```
 
-**ÔòclassAÖµ»á·µ»Øundefined**,²¢ÇÒ**this(Ö´ÐÐÉÏÏÂÎÄ)ÊÇwindow¶ÔÏó**¡£
-Ò²¾ÍÊÇËµ**Èç¹ûÄã²»newµÄ»°£¬thisÖ¸µÄ¾ÍÊÇwindowÈ«¾Ö¶ÔÏóÁË**¡£
-Èç¹ûÒªÀí½âÕâµã£¬ÐèÒªÀíÇå³þthisµÄÖ¸Ïò¡£
+**åˆ™classAå€¼ä¼šè¿”å›žundefined**,å¹¶ä¸”**this(æ‰§è¡Œä¸Šä¸‹æ–‡)æ˜¯windowå¯¹è±¡**ã€‚
+ä¹Ÿå°±æ˜¯è¯´**å¦‚æžœä½ ä¸newçš„è¯ï¼ŒthisæŒ‡çš„å°±æ˜¯windowå…¨å±€å¯¹è±¡äº†**ã€‚
+å¦‚æžœè¦ç†è§£è¿™ç‚¹ï¼Œéœ€è¦ç†æ¸…æ¥šthisçš„æŒ‡å‘ã€‚
 
-####thisµÄÖ¸Ïò£º
+####thisçš„æŒ‡å‘ï¼š
 
-1 ×ÜµÄÀ´Ëµ£¬thisÔÚº¯ÊýÄÚ²¿Ê¹ÓÃ£¬ÓÃÀ´ÒýÓÃ°üº¬º¯ÊýµÄ¶ÔÏó£¬¶ø²»ÊÇº¯Êý±¾Éí¡£
-2 µ±thisÖµµÄËÞÖ÷º¯Êý±»·â×°ÔÚÁíÒ»¸öº¯ÊýµÄÄÚ²¿»òÔÚÁíÒ»¸öº¯ÊýµÄÉÏÏÂÎÄÖÐ±»µ÷ÓÃÊ±£¬thisÖµ½«ÓÀÔ¶ÊÇ¶Ôhead¶ÔÏóµÄÒýÓÃ£¨¼´È«¾Öwindow¶ÔÏó£©
-3 Ê¹ÓÃnew¹Ø¼ü×Öµ÷ÓÃ¹¹Ôìº¯Êý£¬thisÒýÓÃ"¼´½«´´½¨µÄ¶ÔÏó"
+1 æ€»çš„æ¥è¯´ï¼Œthisåœ¨å‡½æ•°å†…éƒ¨ä½¿ç”¨ï¼Œç”¨æ¥å¼•ç”¨åŒ…å«å‡½æ•°çš„å¯¹è±¡ï¼Œè€Œä¸æ˜¯å‡½æ•°æœ¬èº«ã€‚
+2 å½“thiså€¼çš„å®¿ä¸»å‡½æ•°è¢«å°è£…åœ¨å¦ä¸€ä¸ªå‡½æ•°çš„å†…éƒ¨æˆ–åœ¨å¦ä¸€ä¸ªå‡½æ•°çš„ä¸Šä¸‹æ–‡ä¸­è¢«è°ƒç”¨æ—¶ï¼Œthiså€¼å°†æ°¸è¿œæ˜¯å¯¹headå¯¹è±¡çš„å¼•ç”¨ï¼ˆå³å…¨å±€windowå¯¹è±¡ï¼‰
+3 ä½¿ç”¨newå…³é”®å­—è°ƒç”¨æž„é€ å‡½æ•°ï¼Œthiså¼•ç”¨"å³å°†åˆ›å»ºçš„å¯¹è±¡"
 
-ÈçÏÂÃæ´úÂë£º
+å¦‚ä¸‹é¢ä»£ç ï¼š
 
 ```js
 	function classA(){
@@ -78,6 +78,6 @@ JavascriptÖÐ£¬ÊµÀý»¯Ò»¸ö¶ÔÏó£¬»áÓÃµ½new¹Ø¼ü×Ö¡£
 	classA();
 	console.log(name);
 ```
-´ËÊ±Êä³ö`` 1 ``
+æ­¤æ—¶è¾“å‡º`` 1 ``
 
-¿´µ½ÕâÀï£¬ÏàÐÅ¿ÉÒÔ¶¼ÁË½ânewµÄÓÃ·¨¡£
+çœ‹åˆ°è¿™é‡Œï¼Œç›¸ä¿¡å¯ä»¥éƒ½äº†è§£newçš„ç”¨æ³•ã€‚
